@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="CSS/stylesheet.css" />
+		<link rel="icon" type="image/x-icon" href="Images/favicon-32x32.png" />
+		<!--Google Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<!--Google Font-->
+		<title>Interactive rating component</title>
+	</head>
+	<body>
+		<div class="firstScreen">
+			<div class="rating-star">
+				<img src="Images/icon-star.svg" alt="Rating Star" />
+			</div>
+			<h1>How did we do?</h1>
+			<p
+				>Please let us know how we did with your support request. All feedback
+				is appreciated to help us improve our offering!</p
+			>
+			<ul class="rate">
+				<li data-value="1">1</li>
+				<li data-value="2">2</li>
+				<li data-value="3">3</li>
+				<li data-value="4">4</li>
+				<li data-value="5">5</li>
+			</ul>
+			<button class="sub-btn">SUBMIT</button>
+		</div>
+		<div class="secondScreen">
+			<div class="thanks-img">
+				<img src="Images/illustration-thank-you.svg" alt="Thanks" />
+			</div>
+			<h5 id="selection-heading"></h5>
+			<h2>Thank You!</h2>
+			<p
+				>We appreciate you taking the time to give a rating. <br />if you ever
+				need more support, don't hesitate to <br />
+				get in touch!</p
+			>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>

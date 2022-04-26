@@ -1,0 +1,139 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: hsl(216, 12%, 8%);
+	font-family: 'Overpass', sans-serif;
+}
+.firstScreen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #1a212b;
+	width: 375px;
+	height: 330px;
+	border-radius: 20px;
+	padding: 25px;
+	opacity: 1;
+	z-index: 2;
+}
+.rating-star {
+	background-color: rgba(124, 135, 152, 0.15);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.rating-star > img {
+	width: 18px;
+}
+h1 {
+	color: hsl(0, 0%, 100%);
+	margin: 25px 0 10px;
+	font-weight: 700;
+	font-size: 28px;
+}
+p {
+	color: rgb(124, 131, 142);
+	font-size: 15px;
+	margin: 0;
+}
+.rate {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+}
+.rate li {
+	background-color: rgba(124, 135, 152, 0.2);
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(217, 12%, 63%);
+	cursor: pointer;
+	transition: 0.3s;
+}
+.rate li:hover {
+	background-color: rgba(124, 135, 152);
+	color: hsl(0, 0%, 100%);
+}
+li.selected {
+	background-color: hsl(25deg 97% 53% / 85%);
+	font-weight: 700;
+}
+.sub-btn {
+	background-color: hsl(25, 97%, 53%);
+	border-style: none;
+	color: hsl(0, 0%, 100%);
+	width: 100%;
+	padding: 10px;
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.sub-btn:hover {
+	color: hsl(25, 97%, 53%);
+	background-color: hsl(0, 0%, 100%);
+}
+
+.secondScreen {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #1a212b;
+	width: 375px;
+	height: 330px;
+	border-radius: 20px;
+	padding: 25px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	opacity: 0;
+	transition: 0.3s linear;
+}
+.thanks-img > img {
+	width: 130px;
+	margin: 10px 0 20px 0;
+}
+h5 {
+	color: rgba(196, 107, 24, 0.711);
+	background-color: rgba(124, 135, 152, 0.15);
+	padding: 5px 15px;
+	border-radius: 20px;
+	margin: 0;
+}
+h2 {
+	color: hsl(0, 0%, 100%);
+	margin: 25px 0 10px;
+	font-weight: 700;
+}
+
+@media (max-width: 376px) {
+	.firstScreen {
+		transform: translate(-50%, -50%) scale(0.85);
+	}
+	.secondScreen {
+		transform: translate(-50%, -50%) scale(0.85);
+	}
+}
+@media (min-width: 1440px) {
+	.firstScreen {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+	.secondScreen {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+}
