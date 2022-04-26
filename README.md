@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://github.com/Mohammed-Nasif/Interactive-rating-component)
-- Live Site URL: [](https://mohammed-nasif.github.io/Interactive-rating-component/)
+- Solution URL: [Solution](https://github.com/Mohammed-Nasif/Interactive-rating-component)
+- Live Site URL: [Live](https://mohammed-nasif.github.io/Interactive-rating-component/)
 
 ### Built with
 
