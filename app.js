@@ -19,9 +19,8 @@ rate.addEventListener('click', function (e) {
 
 	btn.onclick = function () {
 		if (e.target.classList == 'selected') {
-			rateScreen.style.opacity = 0;
-			rateScreen.style.zIndex = 0;
-			thanksScreen.style.opacity = 1;
+			rateScreen.style.display = 'none';
+			thanksScreen.style.display = 'block';
 		}
 	};
 });
